@@ -1,7 +1,10 @@
-# Build
+# Docker with NGINX and Pagespeed (Google Module)
+Use it in front of your web or application servers to proxy to them and accelerate your site with Pagespeed.
 
-	docker build -t dgageot/ngxpagespeed .
+## Build
 
-# Run
+	docker build -t joostlaan/nginx-pagespeed .
 
-	docker run --rm -ti --net host -v $(pwd)/sites-enabled:/etc/nginx/sites-enabled dgageot/ngxpagespeed
+## Run
+
+	docker run --rm -ti --net host -v $(pwd)/sites-enabled:/etc/nginx/sites-enabled joostlaan/nginx-pagespeed
