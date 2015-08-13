@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/joostlaan/nginx-pagespeed:latest.svg)](https://imagelayers.io/?images=joostlaan/nginx-pagespeed:latest 'joostlaan/nginx-pagespeed')
+
 # Docker with NGINX and Pagespeed (Google Module)
 Use it in front of your web or application servers to proxy to them and accelerate your site with Pagespeed.
 
