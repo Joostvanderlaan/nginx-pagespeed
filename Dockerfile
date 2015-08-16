@@ -37,5 +37,5 @@ ENTRYPOINT ["/usr/sbin/nginx"]
 # Configure nginx
 RUN mkdir /var/ngx_pagespeed_cache
 RUN chmod 777 /var/ngx_pagespeed_cache
-COPY nginx.conf /etc/nginx/conf/nginx.conf
-COPY sites-enabled /etc/nginx/sites-enabled
+ONBUILD COPY nginx.conf /etc/nginx/conf/nginx.conf
+ONBUILD COPY sites-enabled /etc/nginx/sites-enabled
