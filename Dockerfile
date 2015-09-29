@@ -16,7 +16,7 @@ ENV NGINX_VERSION=1.8.0
 ENV NPS_VERSION=1.9.32.6
 
 RUN apt-get update -qq \
-	&& apt-get install -yqq build-essential zlib1g-dev libpcre3 libpcre3-dev openssl libssl-dev libperl-dev wget ca-certificates \
+	&& apt-get install -yqq build-essential zlib1g-dev libpcre3 libpcre3-dev openssl libssl-dev libperl-dev wget ca-certificates logrotate \
 	&& (wget -qO - https://github.com/pagespeed/ngx_pagespeed/archive/v${NPS_VERSION}-beta.tar.gz | tar zxf - -C /tmp) \
 	&& (wget -qO - https://dl.google.com/dl/page-speed/psol/${NPS_VERSION}.tar.gz | tar zxf - -C /tmp/ngx_pagespeed-${NPS_VERSION}-beta/) \
 	&& (wget -qO - http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz | tar zxf - -C /tmp) \
